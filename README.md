@@ -17,9 +17,9 @@
 
  - The workflow has the following flow
 
-            ┌────────────┐
-            │  Form      │
-            └────┬───────┘
+        ┌────────────────────┐
+        │Form or Webhooks    │
+        └────────┬───────────┘
                  ▼
             ┌────────────┐
             │  Intent    │
