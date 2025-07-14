@@ -4,29 +4,12 @@
  - The workflow uses the concept called Parallel Expert Synthesis
  - The worflow starts with a webhook, and then the fields can be parsed through the Edit block into the AI Agents
  - The begining fields are Topic, Platform and Tone. 
- - Sample webhook JSON request looks like this
 
-<code>
-    {
-    "sessionId": "session_md3ev8l3_x09q3ii3d",
-    "Topic": "create 3 ideas on DIY Pottery",
-    "Platform": "LinkedIn",
-    "Tone": "inspirational"
-    }
-</code>
 
- - The workflow has the following flow
-
-        ┌────────────────────┐
-        │Form or Webhooks    │
-        └────────┬───────────┘
-                 ▼
-            ┌────────────┐
-            │  Intent    │
-            └────┬───────┬────────┬────────┐
-                 ▼       ▼        ▼        ▼
-            Reasoning  Emotion  Outline  Final Post
-
+## Simple Helpdesk Agent
+ - The workflow allows CSV data upload into Postgres database (local). If using Pinecone or another hosted Postgres, feel free to use the specific node type
+ - The Upload process converts the text to vector data 
+ - Fetching or searching the data uses Retrieval-Augmented Generation (RAG) technique for searching through the vector data
 
 
 
