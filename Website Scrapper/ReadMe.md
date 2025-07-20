@@ -77,5 +77,3 @@ Execute the workflow with these inputs:
 - Active internet connection for scraping
 
 ---
-
-*Built with n8n workflow automation*
